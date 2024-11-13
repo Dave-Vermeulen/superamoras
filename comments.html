@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Superamoras Blog - Comments</title>
+    <link rel="stylesheet" href="styles/global.css">
+    <link rel="stylesheet" href="styles/comments.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="articles.html">Articles</a></li>
+                <li><a href="admin.html">Admin</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- Comment Section -->
+    <section class="comment-section">
+        <h2>Comments</h2>
+        <form id="comment-form">
+            <textarea id="comment-text" placeholder="Leave a comment..."></textarea>
+            <button id="comment-submit">Submit</button>
+        </form>
+        <div id="comment-list">
+            <!-- Comments will be generated dynamically -->
+        </div>
+    </section>
+    <script src="scripts/global.js"></script>
+    <script src="scripts/comments.js"></script>
+</body>
+</html>

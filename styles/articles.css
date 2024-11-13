@@ -1,0 +1,14 @@
+.article-listing {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.article-card {
+    background-color: var(--dark-gray);
+    padding: 20px;
+    margin: 20px;
+    width: 300px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}

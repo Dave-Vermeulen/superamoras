@@ -1,0 +1,28 @@
+.admin-dashboard {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: var(--dark-gray);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+#admin-stats {
+    display: flex;
+    flex-direction: column;
+}
+
+#admin-actions {
+    display: flex;
+    justify-content: space-between;
+}
+
+#add-article, #manage-comments {
+    padding: 10px 20px;
+    font-size: 18px;
+    border: none;
+    border-radius: 10px;
+    background-color: var(--murray);
+    color: #fff;
+    cursor: pointer;
+}

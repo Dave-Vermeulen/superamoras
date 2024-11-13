@@ -1,0 +1,20 @@
+:root {
+    --murray: #950952ff;
+    --tyrian-purple: #5e0035ff;
+    --black: #020202ff;
+    --pakistan-green: #023618ff;
+    --midnight-green: #005c69ff;
+    --dark-gray: #333333;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Ubuntu, sans-serif;
+    background-color: var(--dark-gray);
+    color: #fff;
+}
