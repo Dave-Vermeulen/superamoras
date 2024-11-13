@@ -1,11 +1,13 @@
 const express = require('express');
 const app = express();
 const db = require('./db');
+const admin = require('./api/admin')(db);
+const comments = require('./api/comments');
 
 // API endpoints
-app.get('/api/comments', require('./api/comments'));
-app.post('/api/comments', require('./api/comments'));
-app.get('/api/admin/stats', require('./api/admin'));
+app.use('/api/comments', comments);
+
+app.get('/api/admin/stats', admin.getStats);
 
 // Serve static files
 app.use(express.static('public'));

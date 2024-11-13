@@ -1,10 +1,18 @@
 // Admin API endpoint
-const express = require('express');
-const router = express.Router();
-const db = require('../db');
-
-router.get('/stats', (req, res) => {
-    db.getAdminStats().then(stats => res.json(stats));
-});
-
-module.exports = router;
+const getAdminStats = (db) => {
+    return async (req, res) => {
+      try {
+        const stats = await db.getAdminStats();
+        res.json(stats);
+      } catch (err) {
+        console.error(err);
+        res.status(500).json({ message: 'Error fetching admin stats' });
+      }
+    };
+  };
+  
+  module.exports = (db) => {
+    return {
+      getStats: getAdminStats(db),
+    };
+  };
